@@ -12,21 +12,21 @@
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
     <include refid="Base_Column_List" />
-    from course_info
+    from t_course
     where id = #{id,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
-    delete from course_info
+    delete from t_course
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.ksx.supervisor.entity.CourseEntity" >
-    insert into course_info (id, cname, caddress
+    insert into t_course (id, cname, caddress
       )
     values (#{id,jdbcType=INTEGER}, #{cname,jdbcType=VARCHAR}, #{caddress,jdbcType=VARCHAR}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.ksx.supervisor.entity.CourseEntity" >
-    insert into course_info
+    insert into t_course
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
         id,
@@ -51,7 +51,7 @@
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.ksx.supervisor.entity.CourseEntity" >
-    update course_info
+    update t_course
     <set >
       <if test="cname != null" >
         cname = #{cname,jdbcType=VARCHAR},
@@ -63,7 +63,7 @@
     where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.ksx.supervisor.entity.CourseEntity" >
-    update course_info
+    update t_course
     set cname = #{cname,jdbcType=VARCHAR},
       caddress = #{caddress,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}

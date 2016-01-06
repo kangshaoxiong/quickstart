@@ -1,64 +1,12 @@
-/**
-The MIT License (MIT) * Copyright (c) 2015 铭飞科技
-
- * Permission is hereby granted, free of charge, to any person obtaining a copy of
- * this software and associated documentation files (the "Software"), to deal in
- * the Software without restriction, including without limitation the rights to
- * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
- * the Software, and to permit persons to whom the Software is furnished to do so,
- * subject to the following conditions:
-
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
-
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
- * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
- * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
- * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
- * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- */
-
 package com.ksx.util;
 
-/**
- * 
- * <p>
- * <b>铭飞基础框架</b>
- * </p>
- * 
- * <p>
- * Copyright: Copyright (c) 2014 - 2015
- * </p>
- * 
- * <p>
- * Company:景德镇铭飞科技有限公司
- * </p>
- * 
- * @author wangtp
- * 
- * @version 300-001-001
- * 
- *          <p>
- *          版权所有 铭飞科
- *          </p>
- * 
- *          <p>
- *          Comments: 分页通用模块<br/>
- *          提供两个构造方式：
- *           PageUtil(int pageNo, int recordCount, String linkUrl) 不需要设置一页显示数量 默认每页10条
- *           public PageUtil(int pageNo, int pageSize, int recordCount, String linkUrl) 可以手动设置分页数量
- *           
- * 
- *          </p>
- * 
- *          <p>
- *          Create Date:2013-12-29
- *          </p>
- * 
- *          <p>
- *          Modification history:
- *          </p>
+/***
+ * Comments: 分页通用模块<br/>
+ * 提供两个构造方式：
+ * PageUtil(int pageNo, int recordCount, String linkUrl) 不需要设置一页显示数量 默认每页10条
+ * public PageUtil(int pageNo, int pageSize, int recordCount, String linkUrl) 可以手动设置分页数量
+ * @author Administrator
+ *
  */
 public class PageUtil {
 

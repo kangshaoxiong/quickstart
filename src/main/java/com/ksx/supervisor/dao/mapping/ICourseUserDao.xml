@@ -12,19 +12,19 @@
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
     <include refid="Base_Column_List" />
-    from course_user_info
+    from t_course_user
     where id = #{id,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
-    delete from course_user_info
+    delete from t_course_user
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.ksx.supervisor.entity.CourseUserEntity" >
-    insert into course_user_info (id, uid, cid)
+    insert into t_course_user (id, uid, cid)
     values (#{id,jdbcType=INTEGER}, #{uid,jdbcType=INTEGER}, #{cid,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.ksx.supervisor.entity.CourseUserEntity" >
-    insert into course_user_info
+    insert into t_course_user
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
         id,
@@ -49,7 +49,7 @@
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.ksx.supervisor.entity.CourseUserEntity" >
-    update course_user_info
+    update t_course_user
     <set >
       <if test="uid != null" >
         uid = #{uid,jdbcType=INTEGER},
@@ -61,7 +61,7 @@
     where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.ksx.supervisor.entity.CourseUserEntity" >
-    update course_user_info
+    update t_course_user
     set uid = #{uid,jdbcType=INTEGER},
       cid = #{cid,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
