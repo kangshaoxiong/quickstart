@@ -93,4 +93,10 @@
 		left join course_info c on
 		cu.cid = c.id
 	</select>
+	
+	<select id="queryAll" resultMap="BaseResultMap">
+		select 
+		<include refid="Base_Column_List"/>
+		from user_info
+	</select>
 </mapper>

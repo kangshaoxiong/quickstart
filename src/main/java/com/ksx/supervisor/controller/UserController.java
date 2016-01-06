@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-/**  
- * 创建时间：2015-1-28 下午1:17:27  
- * @author andy  
- * @version 2.2  
+/***
+ * 测试类
+ * @author Administrator
+ *
  */
 @Controller
 @RequestMapping("/user")
