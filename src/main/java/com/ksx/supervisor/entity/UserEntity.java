@@ -2,9 +2,7 @@ package com.ksx.supervisor.entity;
 
 import java.util.List;
 
-import com.ksx.base.entity.BaseEntity;
-
-public class UserEntity extends BaseEntity{
+public class UserEntity{
 	private Integer id;
 
 	private String uname;

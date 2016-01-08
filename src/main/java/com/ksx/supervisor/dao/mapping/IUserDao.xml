@@ -83,9 +83,8 @@
 			<result property="cname" column="cname" jdbcType="VARCHAR" />
 			<result property="caddress" column="caddress" jdbcType="VARCHAR" />
 		</collection>
-
-
 	</resultMap>
+	
 	<select id="selectAll" resultMap="UserCourseMap">
 		select u.id, u.uname,
 		u.unumber, c.id course_id, c.cname, c.caddress from t_user u left
@@ -94,9 +93,4 @@
 		cu.cid = c.id
 	</select>
 	
-	<select id="queryAll" resultMap="BaseResultMap">
-		select 
-		<include refid="Base_Column_List"/>
-		from t_user
-	</select>
 </mapper>

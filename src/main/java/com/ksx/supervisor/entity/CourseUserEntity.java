@@ -1,8 +1,6 @@
 package com.ksx.supervisor.entity;
 
-import com.ksx.base.entity.BaseEntity;
-
-public class CourseUserEntity extends BaseEntity{
+public class CourseUserEntity{
     private Integer id;
 
     private Integer uid;

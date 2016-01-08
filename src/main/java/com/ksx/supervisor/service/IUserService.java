@@ -1,8 +1,6 @@
 package com.ksx.supervisor.service;
 
 import java.util.List;
-
-import com.ksx.base.service.IBaseService;
 import com.ksx.supervisor.entity.UserEntity;
 
 /**
@@ -10,7 +8,7 @@ import com.ksx.supervisor.entity.UserEntity;
  * @author pc
  *
  */
-public interface IUserService extends IBaseService{
+public interface IUserService{
 
 	UserEntity getUserById(int id);
 	

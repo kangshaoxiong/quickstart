@@ -1,15 +1,8 @@
 package com.ksx.supervisor.controller;
 
 import java.util.List;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import com.ksx.base.entity.BaseEntity;
 import com.ksx.supervisor.entity.UserEntity;
 import com.ksx.supervisor.service.IUserService;
-import com.ksx.util.StringUtil;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -44,20 +37,7 @@ public class UserController {
 	public @ResponseBody Object showUserInfos(){
 		//测试自己实现的方法
 		List<UserEntity> userInfos = userService.getUsers();
-		//测试base基类实现的方法
-		//List<BaseEntity> userInfos = userService.queryAll();
 		return userInfos;
 	}
 	
-	/**
-	 * 测试分页方法
-	 */
-	@RequestMapping("/showPage")
-	public String showUserPage(HttpServletRequest request, ModelMap mode, HttpServletResponse response){
-		String pageNo = request.getParameter("pageNo");
-		if (!StringUtil.isInteger(pageNo)) {
-			pageNo = "1";
-		}
-		return "/user/showPage";
-	}
 }

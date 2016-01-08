@@ -2,10 +2,9 @@ package com.ksx.supervisor.dao;
 
 import java.util.List;
 
-import com.ksx.base.dao.IBaseDao;
 import com.ksx.supervisor.entity.UserEntity;
 
-public interface IUserDao extends IBaseDao{
+public interface IUserDao{
     int deleteByPrimaryKey(Integer id);
 
     int insert(UserEntity record);

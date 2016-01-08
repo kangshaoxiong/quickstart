@@ -1,9 +1,8 @@
 package com.ksx.supervisor.dao;
 
-import com.ksx.base.dao.IBaseDao;
 import com.ksx.supervisor.entity.CourseUserEntity;
 
-public interface ICourseUserDao extends IBaseDao{
+public interface ICourseUserDao{
     int deleteByPrimaryKey(Integer id);
 
     int insert(CourseUserEntity record);

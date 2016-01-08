@@ -2,8 +2,6 @@ package com.ksx.supervisor.service.impl;
 
 import java.util.List;
 
-import com.ksx.base.dao.IBaseDao;
-import com.ksx.base.service.impl.BaseServiceImpl;
 import com.ksx.supervisor.dao.IUserDao;
 import com.ksx.supervisor.entity.UserEntity;
 import com.ksx.supervisor.service.IUserService;
@@ -16,7 +14,7 @@ import org.springframework.stereotype.Service;
  *
  */
 @Service("userService")
-public class UserServiceImpl extends BaseServiceImpl implements IUserService {
+public class UserServiceImpl implements IUserService {
 
 	@Autowired
 	private IUserDao userDao;
@@ -40,10 +38,4 @@ public class UserServiceImpl extends BaseServiceImpl implements IUserService {
 		return result;
 	}
 	
-	@Override
-	protected IBaseDao getDao() {
-		// TODO Auto-generated method stub
-		return userDao;
-	}
-
 }
